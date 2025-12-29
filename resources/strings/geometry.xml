@@ -1,0 +1,20 @@
+<resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <!-- 
+        Specification of intra and between Braille digit geometry.
+        * PixelsPerUnit: size in pixels of a unit used to calculate the size of dots and spaces.
+        * DotSizeUnits: factor used to calculate dot size (reference size * dot size units).
+        * DotSpaceUnits: factor used to calculate space between dots in a cell (reference size * dot space units).
+        * CellSpaceUnits: factor used to calculate space between cells in a group (reference size * cell space units).
+        * GroupSpaceUnits: factor used to calculate space between groups (reference size * group space units).
+    -->
+    <jsonData id="BrailleGeometry">{
+        "PixelsPerUnit": 10,
+        "DotRadiusUnits": 3,
+        "DotSpaceUnits": 1,
+        "CellSpaceUnits": 3,
+        "GroupSpaceUnits": 5
+    }</jsonData>
+
+</resources>
