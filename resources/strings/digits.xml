@@ -1,0 +1,73 @@
+<resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <!--
+        Encoding of digits (1..9, 0) as Braille letters (A-J).
+        Braille characters are represented as 3x2 (rows x columns) groups of dots.
+        Dots in a group are numbered the standard way as follows:
+
+          1 4
+          2 5
+          3 6
+
+        In the encoding below, each digit is represented by a 6-element array of booleans indicating 
+        whether the corresponding dot is raised or not (true = raised, false = flat).
+        This reprtesentation is chosen over one providing only indexes of the raised dots (e.g., 0 = [2, 4, 5])
+        for efficiency of lookup, at the cost of space usage.
+
+        Note that 0-based indexing is used to access the information (dot #1 is at index 0, etc.).
+    -->
+    <jsonData id="BrailleDigits">[
+        {
+            "value": 0,
+            "character": "J",
+            "dots": [false, true, false, true, true, false]
+        },
+        {
+            "value": 1,
+            "character": "A",
+            "dots": [true, false, false, false, false, false]
+        },
+        {
+            "value": 2,
+            "character": "B",
+            "dots": [true, true, false, false, false, false]
+        },
+        {
+            "value": 3,
+            "character": "C",
+            "dots": [true, false, false, true, false, false]
+        },
+        {
+            "value": 4,
+            "character": "D",
+            "dots": [true, false, false, true, true, false]
+        },
+        {
+            "value": 5,
+            "character": "E",
+            "dots": [true, false, false, false, true, false]
+        },
+        {
+            "value": 6,
+            "character": "F",
+            "dots": [true, true, false, true, false, false]
+        },
+        {
+            "value": 7,
+            "character": "G",
+            "dots": [true, true, false, true, true, false]
+        },
+        {
+            "value": 8,
+            "character": "H",
+            "dots": [true, true, false, false, true, false]
+        },
+        {
+            "value": 9,
+            "character": "I",
+            "dots": [false, true, false, true, false, false]
+        }
+    ]</jsonData>
+
+</resources>
