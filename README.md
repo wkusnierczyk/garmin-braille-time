@@ -2,8 +2,8 @@
 
 A minimalist, elegant, typography-focused Garmin Connect IQ watch face that displays the current time using Braille digits.
 
-![Braille](resources/graphics/braille.png)
-![Braille plus standard](resources/graphics/braille-standard.png)
+![Braille](resources/graphics/BrailleTimeHero1.png)
+![Braille plus standard](resources/graphics/BrailleTimeHero2.png)
 
 Available from the [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/b9312f59-3767-4f2d-8da3-475135ce17dd).
 

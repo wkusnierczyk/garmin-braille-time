@@ -11,3 +11,5 @@ resources/graphics/braille.png filter=lfs diff=lfs merge=lfs -text
 resources/graphics/BrailleDigits-copy.png filter=lfs diff=lfs merge=lfs -text
 resources/graphics/BrailleDigits.png filter=lfs diff=lfs merge=lfs -text
 resources/graphics/braille-standard.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/BrailleTimeHero1.png filter=lfs diff=lfs merge=lfs -text
+resources/graphics/BrailleTimeHero2.png filter=lfs diff=lfs merge=lfs -text
