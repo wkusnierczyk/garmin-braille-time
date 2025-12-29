@@ -70,27 +70,24 @@ class BrailleTime {
     private var _clockTime;
     private var _hour;
     private var _minutes;
-    private var _seconds;
 
     function initialize(clockTime as System.ClockTime) {
         _clockTime = clockTime;
         _hour = _clockTime.hour;
         _minutes = _clockTime.min;
-        _seconds = _clockTime.sec;
     }
 
     function draw(dc) {
 
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var widthUnits = HORIZONTAL_THREE_GROUPS_UNITS;
+        var widthUnits = HORIZONTAL_TWO_GROUPS_UNITS;
         var heightUnits = VERTICAL_CELL_UNITS;
 
-        var pixelsPerUnit = Math.ceil((1 - 2 * EDGE_MARGIN_PERCENT / 100) * width / widthUnits).toNumber();
-        // var pixelsPerUnit = Math.ceil((width - 20) / widthUnits).toNumber();
+        var pixelsPerUnit = Math.floor((1.0 - 2.0 * EDGE_MARGIN_PERCENT / 100.00) * width / widthUnits).toNumber();
 
-        var leftX = Math.floor((width - pixelsPerUnit * widthUnits) / 2).toNumber();
-        var topY = Math.floor((height - pixelsPerUnit * heightUnits) / 2).toNumber();
+        var leftX = Math.ceil((width - pixelsPerUnit * widthUnits) / 2).toNumber();
+        var topY = Math.ceil((height - pixelsPerUnit * heightUnits) / 2).toNumber();
 
         new BrailleDigit(_tensOf(_hour))
             .withPixelsPerUnit(pixelsPerUnit)
@@ -110,16 +107,6 @@ class BrailleTime {
         new BrailleDigit(_onesOf(_minutes))
             .withPixelsPerUnit(pixelsPerUnit)
             .withColor(MINUTES_COLOR)
-            .draw(dc, leftX, topY);
-        leftX += (HORIZONTAL_CELL_UNITS + GROUP_SPACE_UNITS) * pixelsPerUnit;
-        new BrailleDigit(_tensOf(_seconds))
-            .withPixelsPerUnit(pixelsPerUnit)
-            .withColor(SECONDS_COLOR)
-            .draw(dc, leftX, topY);
-        leftX += (HORIZONTAL_CELL_UNITS + CELL_SPACE_UNITS) * pixelsPerUnit;
-        new BrailleDigit(_onesOf(_seconds))
-            .withPixelsPerUnit(pixelsPerUnit)
-            .withColor(SECONDS_COLOR)
             .draw(dc, leftX, topY);
 
     }
