@@ -5,6 +5,8 @@ A minimalist, elegant, typography-focused Garmin Connect IQ watch face that disp
 ![Braille](resources/graphics/braille.png)
 ![Braille plus standard](resources/graphics/braille-standard.png)
 
+Available from the [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/b9312f59-3767-4f2d-8da3-475135ce17dd).
+
 ## Contents
 
 * [Braille time](#base-n-time)
