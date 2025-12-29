@@ -1,0 +1,7 @@
+<resources>
+
+    <fonts>
+        <font id="StandardTimeFont" filename="Ubuntu-Regular-24.fnt" antialias="true" />
+    </fonts>
+
+</resources>
