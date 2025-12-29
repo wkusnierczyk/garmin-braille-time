@@ -80,8 +80,8 @@ You can use the included `Makefile` to conveniently trigger some of the actions 
 ```bash
 # build binaries from sources
 make build
-# run unit tests (none implemented at this time)
 
+# run unit tests (none implemented at this time)
 make test
 
 # run the simulation
