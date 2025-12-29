@@ -13,3 +13,4 @@ resources/graphics/BrailleDigits.png filter=lfs diff=lfs merge=lfs -text
 resources/graphics/braille-standard.png filter=lfs diff=lfs merge=lfs -text
 resources/graphics/BrailleTimeHero1.png filter=lfs diff=lfs merge=lfs -text
 resources/graphics/BrailleTimeHero2.png filter=lfs diff=lfs merge=lfs -text
+resources/fonts/Ubuntu-Regular.ttf filter=lfs diff=lfs merge=lfs -text
