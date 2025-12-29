@@ -23,7 +23,7 @@ class BrailleTimeSettingsMenu extends WatchUi.Menu2 {
 
 }
 
-class BaseTimeSettingsDelegate extends WatchUi.Menu2InputDelegate {
+class BrailleTimeSettingsDelegate extends WatchUi.Menu2InputDelegate {
 
     function initialize() {
         Menu2InputDelegate.initialize();

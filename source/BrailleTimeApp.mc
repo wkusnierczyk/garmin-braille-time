@@ -16,8 +16,8 @@ class BrailleTimeApp extends Application.AppBase {
         WatchUi.requestUpdate();
     }
 
-    // function getSettingsView() {
-    //     return [ new BrailleTimeSettingsMenu(), new BrailleTimeSettingsDelegate() ];
-    // }
+    function getSettingsView() {
+        return [ new BrailleTimeSettingsMenu(), new BrailleTimeSettingsDelegate() ];
+    }
 
 }
