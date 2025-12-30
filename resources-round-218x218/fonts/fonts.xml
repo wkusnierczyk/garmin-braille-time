@@ -1,7 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-
     <fonts>
-        <font id="StandardTimeFont" filename="Ubuntu-Regular-24.fnt" antialias="true" />
+        <font id="StandardTimeFont" filename="Ubuntu-Regular-23.fnt" antialias="true" />
     </fonts>
-
 </resources>

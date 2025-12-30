@@ -23,3 +23,4 @@ resources-round-454x454/fonts/Ubuntu-Regular-49.png filter=lfs diff=lfs merge=lf
 resources-round-218x218/fonts/Ubuntu-Regular-24.png filter=lfs diff=lfs merge=lfs -text
 resources-round-416x416/fonts/Ubuntu-Regular-45.png filter=lfs diff=lfs merge=lfs -text
 export filter=lfs diff=lfs merge=lfs -text
+resources-round-218x218/fonts/Ubuntu-Regular-23.png filter=lfs diff=lfs merge=lfs -text
