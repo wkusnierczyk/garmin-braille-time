@@ -334,8 +334,14 @@ class FontProcessor:
         el_text = el_text.strip().capitalize()
 
         # Humanize "Font" (Font Name)
-        font_text = task.font_name.replace("-", " ")
-        font_text = font_text.strip().capitalize()
+        # Split by dash, keep first part as-is (e.g. SUSEMono), lowercase the rest (e.g. regular)
+        parts = task.font_name.split("-")
+        if parts:
+            base = parts[0]
+            suffixes = [p.lower() for p in parts[1:]]
+            font_text = " ".join([base] + suffixes)
+        else:
+            font_text = task.font_name
         
         return el_text, font_text
 

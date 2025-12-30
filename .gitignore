@@ -3,6 +3,7 @@ bin/
 mir/
 gen/
 deploy/
+export/
 
 # Debug files
 debug.xml
