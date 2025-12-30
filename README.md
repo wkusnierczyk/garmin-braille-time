@@ -10,7 +10,6 @@ Available from the [Garmin Connect IQ Developer portal](https://apps.garmin.com/
 ## Contents
 
 * [Braille time](#base-n-time)
-* [Project structure](#project-structure)
 * [Fonts](#fonts)
 * [Build, test, deploy](#build-test-deploy)
 
@@ -30,49 +29,9 @@ The watch face supports the following user settings, available as an on-watch cu
 
 * Standard time display can be toggled on/off.
 
-## Project structure
-
-```bash
-BrailleTime
-├── LICENSE                        # MIT license
-├── Makefile                       # Convenience makefile
-├── manifest.xml
-├── monkey.jungle
-├── README.md                      # This readme file
-├── resources
-│   ├── drawables
-│   │   ├── drawables.xml
-│   │   └── launcher_icon.svg      # Launcher icon
-│   ├── fonts
-│   │   ├── fonts.xml              # Font map 
-│   │   ├── [ttf, fnt, png fonts]  # Source (ttf) and converted (fnt, png) fonts
-│   │   └── UFL.txt                # Font license
-│   ├── graphics
-│   │   └── *.png                  # Graphics (screenshots, screen captures, hero images)
-│   ├── layouts
-│   │   └── layout.xml             # Layout map (for standard time only)
-│   ├── settings                   # User settings
-│   │   ├── properties.xml         
-│   │   └── settings.xml
-│   └── strings
-│       ├── digits.xml             # Definition of Braille digits        
-│       ├── geometry.xml           # Specification of intra and between Braille digit geometry
-│       └── strings.xml            # i18n-ready (English version provided)
-├── resources-round-*              # Screen resolution-specific resources
-│   └── ...
-└── source
-    ├── BrailleTime.mc             # Routines for converting time to Braille digits
-    ├── BrailleTimeApp.mc          # Standard App entry point
-    ├── BrailleTimeConstants.mc    # Constants used throughout the code
-    ├── BrailleTimeSettings.mc     # User settings (standard time toggle)
-    ├── BrailleTimeTests.mc        # Unit tests (none implemented at this time)
-    ├── BrailleTimeView.mc         # Standardd View boilerplate, plus drawing standard time
-    └── PropertyUtils.mc           # Utilities for dealing with properties
-```
-
 ## Fonts
 
-The Base Time watch face uses custom fonts:
+The Braille Time watch face uses custom fonts:
 
 * [Ubuntu](https://fonts.google.com/specimen/SUSE+Mono) for standard time (Ubuntu-Regular).
 
