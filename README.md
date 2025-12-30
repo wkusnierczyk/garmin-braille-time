@@ -33,7 +33,7 @@ The watch face supports the following user settings, available as an on-watch cu
 
 The Braille Time watch face uses custom fonts:
 
-* [Ubuntu](https://fonts.google.com/specimen/SUSE+Mono) for standard time (Ubuntu-Regular).
+* [Ubuntu](https://fonts.google.com/specimen/Ubuntu) for standard time (regular).
 
 The development process was as follows:
 
