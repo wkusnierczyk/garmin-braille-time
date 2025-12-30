@@ -22,11 +22,13 @@ The digits 1-9 and 0 correspond to the letters A-J:
 ![Braille digits](resources/graphics/BrailleDigits-copy.png)
 
 The watch face does not use an actual Braille font to show the digits, but rather draws them from scratch (with the `fillCircle` and `drawCircle` library functions).
+The Braille digits scale appropriately to the watch screen resolution.
 
-The watch face uses a custom font for the standard time, [Ubuntu](https://fonts.google.com/specimen/Ubuntu), available from [Google Fonts](https://fonts.google.com/) as a True Type font (`ttf`).
-It has been converted to a bitmap font (`bmp`, `fnt`) using the open source command-line [`ttf2bmp`](https://github.com/wkusnierczyk/ttf2bmp) converter.
+### User settings
 
-Standard time can be toggled on/off with an on-watch user setting.
+The watch face supports the following user settings, available as an on-watch customize menu:
+
+* Standard time display can be toggled on/off.
 
 ## Project structure
 
