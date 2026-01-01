@@ -44,16 +44,21 @@ The development process was as follows:
 
 The table below lists all font sizes provided for the supported screen resolutions.
 
-| Resolution | Element       | Font           | Size |
-| ---------: | :------------ | :------------- | ---: |
-|  218 x 218 | Standard time | Ubuntu regular |   23 |
-|  240 x 240 | Standard time | Ubuntu regular |   26 |
-|  260 x 260 | Standard time | Ubuntu regular |   28 |
-|  280 x 280 | Standard time | Ubuntu regular |   30 |
-|  360 x 360 | Standard time | Ubuntu regular |   39 |
-|  390 x 390 | Standard time | Ubuntu regular |   42 |
-|  416 x 416 | Standard time | Ubuntu regular |   45 |
-|  454 x 454 | Standard time | Ubuntu regular |   49 |
+| Resolution |    Shape     |    Element    |      Font      | Size |
+| ---------: | :----------- | :------------ | :------------- | ---: |
+|  148 x 205 | rectangle    | Standard time | Ubuntu regular |   16 |
+|  176 x 176 | semi-octagon | Standard time | Ubuntu regular |   19 |
+|  215 x 180 | semi-round   | Standard time | Ubuntu regular |   19 |
+|  218 x 218 | round        | Standard time | Ubuntu regular |   23 |
+|  240 x 240 | round        | Standard time | Ubuntu regular |   26 |
+|  240 x 240 | rectangle    | Standard time | Ubuntu regular |   26 |
+|  260 x 260 | round        | Standard time | Ubuntu regular |   28 |
+|  280 x 280 | round        | Standard time | Ubuntu regular |   30 |
+|  320 x 360 | rectangle    | Standard time | Ubuntu regular |   34 |
+|  360 x 360 | round        | Standard time | Ubuntu regular |   39 |
+|  390 x 390 | round        | Standard time | Ubuntu regular |   42 |
+|  416 x 416 | round        | Standard time | Ubuntu regular |   45 |
+|  454 x 454 | round        | Standard time | Ubuntu regular |   49 |
 
 
 ## Build, test, deploy
