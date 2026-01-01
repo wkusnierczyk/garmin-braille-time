@@ -1,15 +1,26 @@
 # Garmin Braille Time
 
-A minimalist, elegant, typography-focused Garmin Connect IQ watch face that displays the current time using Braille digits.
+A minimalist, elegant, nerdy Garmin Connect IQ watch face that displays the current time using Braille digits.
 
-![Braille](resources/graphics/BrailleTimeHero1.png)
-![Braille plus standard](resources/graphics/BrailleTimeHero2.png)
+![](resources/graphics/BrailleTimeHero-small.png)
 
 Available from the [Garmin Connect IQ Developer portal](https://apps.garmin.com/apps/b9312f59-3767-4f2d-8da3-475135ce17dd).
+
+> **Note**  
+> Swatch Time is part of a [collection of unconventional Garmin watch faces](https://github.com/wkusnierczyk/garmin-watch-faces). It has been developed for fun, as a proof of concept, and as a learning experience.
+> It is shared _as is_ as an open source project, with no commitment to long term maintenance and further feature development.
+>
+> Please use [issues](https://github.com/wkusnierczyk/garmin-braille-time/issues) to provide bug reports or feature requests.  
+> Please use [discussions](https://github.com/wkusnierczyk/garmin-braille-time/discussions) for any other comments.
+>
+> All feedback is wholeheartedly welcome.
+
+
 
 ## Contents
 
 * [Braille time](#base-n-time)
+* [Features](#features)
 * [Fonts](#fonts)
 * [Build, test, deploy](#build-test-deploy)
 
@@ -23,17 +34,21 @@ The digits 1-9 and 0 correspond to the letters A-J:
 The watch face does not use an actual Braille font to show the digits, but rather draws them from scratch (with the `fillCircle` and `drawCircle` library functions).
 The Braille digits scale appropriately to the watch screen resolution.
 
-### User settings
+## Features
 
-The watch face supports the following user settings, available as an on-watch customize menu:
+The Braille Time watch face supports the following features:
 
-* Standard time display can be toggled on/off.
+|Screenshot|Description|
+|-|:-|
+|![](resources/graphics/BrailleTimeHero1.png)|**Braille time**<br />Time displayed as Braille digits. Each digit is composed of six circles (dots), filled (when the dot is _raised_) and empty (when the dot is _flat_). There are two groups of two digits, one for the hour (in white color) and one for the minutes (in orange color).|
+|![](resources/graphics/BrailleTimeHero2.png)|**Standard time**<br />Standard time can be toggled on and off by the user with a setting in the Customize menu on the device. Standard time is displayed in a small, light gray font beneath the Braille time.|
+
 
 ## Fonts
 
 The Braille Time watch face uses custom fonts:
 
-* [Ubuntu](https://fonts.google.com/specimen/Ubuntu) for standard time (regular).
+* [Ubuntu](https://fonts.google.com/specimen/Ubuntu) for the standard time (regular).
 
 The development process was as follows:
 
@@ -76,11 +91,14 @@ You can use the included `Makefile` to conveniently trigger some of the actions 
 # build binaries from sources
 make build
 
-# run unit tests (none implemented at this time)
+# run unit tests -- note: requires the simulator to be running
 make test
 
-# run the simulation
+# run the simulation 
 make run
+
+# clean up the project directory
+make clean
 ```
 
 To sideload your application to your Garmin watch, see [developer.garmin.com/connect-iq/connect-iq-basics/your-first-app](https://developer.garmin.com/connect-iq/connect-iq-basics/your-first-app/).
