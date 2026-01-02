@@ -11,7 +11,7 @@ DEV_KEY ?= ../garmin-keys/developer_key
 DEVICE ?= fenix7xpronowifi
 
 # Output filename
-OUTPUT := BaseTime.prg
+OUTPUT := BrailleTime.prg
 # =================================================
 
 # Commands
